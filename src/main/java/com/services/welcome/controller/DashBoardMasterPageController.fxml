@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.services.welcome.controller.DashBoardMasterPageController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color: white;">
+          <children>
+                  <HBox HBox.hgrow="ALWAYS">
+                     <children>
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                    <children>
+                      <Button mnemonicParsing="false" onAction="#userRegistryButton_OnAction" text="User Registry" />
+                      <Button mnemonicParsing="false" onAction="#bookSearchButton_OnAction" text="Book Search" />
+                    </children>
+                  </HBox>
+                     </children>
+                  </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0">
+              <children>
+                <Button mnemonicParsing="false" onAction="#logoutButton_OnAction" text="Logout" />
+              </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+            </HBox>
+          </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+        </HBox>
+        <VBox fx:id="mainContainerVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color: white;" VBox.vgrow="ALWAYS">
+          <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+          </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

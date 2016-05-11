@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="250.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.services.controller.book.IssueBookController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox maxWidth="-1.0" prefHeight="240.0" prefWidth="-1.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <children>
+        <VBox fx:id="mainContainerVBox" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+              <children>
+                <Label fx:id="validateMemberValidationLabel" minWidth="30.0" text="" />
+              </children>
+            </VBox>
+            <VBox id="VBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <GridPane hgap="5.0" vgap="3.0">
+                  <children>
+                    <Label text="Member First Name :" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="memberSearchTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <children>
+                        <Button id="memberSearchTextField" fx:id="validateMemberButton" mnemonicParsing="false" onAction="#validateMemberButton_OnAction" text="Validate Member" />
+                        <Button fx:id="addMemberButton" mnemonicParsing="false" onAction="#addNewMemberButton_OnAction" text="Add Member" visible="false" />
+                      </children>
+                    </HBox>
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="-1.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="-1.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </VBox>
+            <VBox id="createPopupWindow" fx:id="memberDetailVBox" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <VBox prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <GridPane hgap="5.0" vgap="3.0">
+                      <children>
+                        <Label text="First Name :" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Label text="Last Name :" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Label text="Email :" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <Label fx:id="firstNameLabel" minWidth="30.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label fx:id="lastNameLabel" minWidth="30.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="emailLabel" minWidth="30.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      </children>
+                      <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                    </GridPane>
+                  </children>
+                </VBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <Button fx:id="issueBookButton" mnemonicParsing="false" onAction="#issueBookButton_OnAction" text="Issue Book" />
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

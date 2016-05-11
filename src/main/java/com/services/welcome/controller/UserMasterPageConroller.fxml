@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.services.welcome.controller.UserMasterPageConroller">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <Label text="Last Name :" />
+                <TextField id="createPopupWindow" fx:id="searchByLastNameTextField" prefWidth="200.0" />
+                <Button id="createPopupWindow" fx:id="searchUserButton" mnemonicParsing="false" onAction="#searchUserButton_OnAction" text="Search" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" VBox.vgrow="ALWAYS">
+          <children>
+            <VBox id="VBox" alignment="CENTER" maxWidth="-Infinity" spacing="5.0">
+              <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <Button fx:id="addUserButton" mnemonicParsing="false" onAction="#addUserButton_OnAction" text="Add User" />
+                  </children>
+                </HBox>
+                <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                  <children>
+                    <TableView fx:id="userDetailTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0">
+                      <columns>
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="First Name" fx:id="userFirstNameColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="Last Name" fx:id="userLastNameColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="User Name" fx:id="userNameTableColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="Email Id" fx:id="emailIdTableColumn" />
+                        <TableColumn minWidth="250.0" prefWidth="250.0" resizable="true" text="Action" fx:id="actionTableColumn" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

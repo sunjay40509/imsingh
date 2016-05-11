@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.services.welcome.controller.BookIssueDetailViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" VBox.vgrow="ALWAYS">
+          <children>
+            <VBox id="VBox" alignment="CENTER" maxWidth="-Infinity" spacing="5.0">
+              <children>
+                <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                  <children>
+                    <TableView id="userDetailTableView" fx:id="bookDetailTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="-1.0">
+                      <columns>
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="ISBN No" fx:id="isbnNoTableColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" resizable="true" text="Title" fx:id="bookNameTableColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" text="Price" fx:id="bookPriceTableColumn" />
+                        <TableColumn minWidth="100.0" prefWidth="120.0" text="No Of Copies" fx:id="bookCopiesTableColumn" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

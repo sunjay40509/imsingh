@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.services.welcome.controller.SignUpConroller">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <GridPane hgap="5.0" vgap="3.0">
+              <children>
+                <Label text="First Name :" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label text="Last Name :" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label text="User Name :" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label text="Password :" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label text="Confirm Password :" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <Label text="Email Id :" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <children>
+                    <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#signUpButton_OnAction" text="Sign UP" />
+                    <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButton_OnAction" text="Cancel" />
+                  </children>
+                </HBox>
+                <TextField fx:id="firstNameTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="lastNameTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="userNameTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <PasswordField fx:id="passowordPasswordField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <PasswordField fx:id="confirmPasswordField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="emailIdTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <Label fx:id="emailIdValidationLabel" text="" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Label fx:id="passwordValidationLabel" minWidth="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label fx:id="firstNameValidationLabel" minWidth="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <Label fx:id="lastNameValidationLabel" minWidth="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label fx:id="userNameValidationLabel" minWidth="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="102.0" minWidth="-Infinity" prefWidth="102.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="-1.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
